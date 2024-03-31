@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% include 'menu.html' %}
+
+{% block content %}
+<style>
+
+</style>
+
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <label for="client_id">Client ID</label>
+      <input type="text" class="form-control" id="client_id">
+    </div>
+    <div class="col">
+      <label for="zip_from">Zip From</label>
+      <input type="text" class="form-control" id="zip_from">
+    </div>
+    <div class="col">
+      <label for="zip_to">Zip To</label>
+      <input type="text" class="form-control" id="zip_to">
+    </div>
+    <div class="col">
+      <button type="button" class="btn btn-dark my-4" id="add-transport">
+        <svg xmlns="http://www.w3.org/2000/svg" style="fill:white;" viewBox="0 0 16 16" width="24" height="24"><path d="M7.75 2a.75.75 0 0 1 .75.75V7h4.25a.75.75 0 0 1 0 1.5H8.5v4.25a.75.75 0 0 1-1.5 0V8.5H2.75a.75.75 0 0 1 0-1.5H7V2.75A.75.75 0 0 1 7.75 2Z"></path></svg>
+      </button>
+
+  </div>
+
+  <table class="table table-sm my-4">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Client ID</th>
+        <th scope="col">From</th>
+        <th scope="col">To</th>
+        <th scope="col">Created</th>
+        <th scope="col">Remove</th>
+      </tr>
+    </thead>
+    <tbody id="transports-table-body">
+    </tbody>
+  </table>
+</div>
+
+
+{% endblock %}
