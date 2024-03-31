@@ -1,4 +1,4 @@
-from app import db
+from rlsped_app.flask_app import db
 from sqlalchemy import Sequence
 
 

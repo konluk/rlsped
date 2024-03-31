@@ -1,10 +1,10 @@
 from flask import render_template, request, jsonify
-from app import app, db
+from rlsped_app.flask_app import app, db
 from flask import session, redirect
 from functools import wraps
 
-from app.config import app_config
-from app.geo_tools import GeoTools
+from rlsped_app.config import app_config
+from rlsped_app.geo_tools import GeoTools
 from .models import Transport
 
 import datetime
